@@ -1,89 +1,55 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>B BLOG</title>
-  <style>
-    body {
-      background-color: #ffffff;
-      font-family: 'Arial Black', sans-serif;
-      color: #000000;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #f0f0f0;
-      border-bottom: 4px solid #ccc;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
-    }
-
-    h2 {
-      font-size: 1.2em;
-      margin-top: 0;
-      font-weight: normal;
-    }
-
-    .main-content {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #f5f5f5;
-      color: #333;
-      font-size: 0.9em;
-      border-top: 2px solid #ccc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B BLOG</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 0;">
 
-  <header>
+<header style="background-color: #4b2e2e; color: white; padding: 20px; text-align: center;">
     <h1>B BLOG</h1>
-    <h2>HOTLINE: 06503403433</h2>
-  </header>
+    <p>HOTLINE: 06503403433</p>
+</header>
 
-  <div class="main-content">
-    <section style="max-width: 800px; margin: 40px auto; padding: 0 20px; font-family: 'Arial', sans-serif; color: #000;">
-  <h2 style="border-bottom: 2px solid #ccc; padding-bottom: 10px;">29. April 2025</h2>
-  <p>
-    Heute habe ich bei der U-Bahn-Station einen Nachbarn gesehen. Danach folgte eine dreistündige SA, die relativ anstrengend war.
-    Im Anschluss habe ich mir ein Eis vom Tichy geholt. Später habe ich eine Käseschnecke gegessen und bin mit dem Bus nach Hause gefahren.
-  </p>
-  <p><strong>7/10 day</strong></p>
+<!-- Dunkelbraune Linie als Trennlinie -->
+<hr style="border: none; border-top: 2px solid #4b2e2e; margin: 40px auto; width: 80%;">
+
+<!-- Blogeintrag mit braunem Rahmen -->
+<section style="max-width: 800px; margin: 20px auto; padding: 20px; border: 2px solid #4b2e2e; background-color: #fff; box-shadow: 0 4px 10px rgba(75, 46, 46, 0.1); color: #000;">
+    <h2 style="border-bottom: 2px solid #4b2e2e; color: #4b2e2e; padding-bottom: 10px;">29. April 2025</h2>
+    <p>
+        Heute habe ich bei der U-Bahn-Station einen Nachbarn gesehen. Danach folgte eine dreistündige SA, die relativ anstrengend war.
+        Im Anschluss habe ich mir ein Eis vom Tichy geholt. Später habe ich eine Käseschnecke gegessen und bin mit dem Bus nach Hause gefahren.
+    </p>
+    <hr style="border: none; border-top: 1px dashed #4b2e2e; margin: 20px 0;">
+    <p style="color: #4b2e2e; font-weight: bold;">7/10 day</p>
 </section>
-    <!-- Kommentarbereich mit Disqus -->
-    <div id="disqus_thread"></div>
-    <script>
-      var disqus_config = function () {
+
+<!-- Noch eine Linie vor den Kommentaren -->
+<hr style="border: none; border-top: 2px solid #4b2e2e; margin: 40px auto; width: 80%;">
+
+<!-- Kommentarbereich mit Disqus -->
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
         this.page.url = window.location.href;
         this.page.identifier = window.location.pathname;
-      };
+    };
 
-      (function() {
+    (function() {
         var d = document, s = d.createElement('script');
         s.src = 'https://bblog-3.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Bitte aktiviere JavaScript, um die Kommentare zu sehen. <a href="https://disqus.com/?ref_noscript">Disqus</a></noscript>
-  </div>
+    })();
+</script>
+<noscript>Bitte aktiviere JavaScript, um die Kommentare zu sehen. <a href="https://disqus.com/?ref_noscript">Disqus</a></noscript>
 
-  <footer>
+<footer style="text-align: center; padding: 20px; background-color: #4b2e2e; color: white;">
     &copy; 2025 Büsra Coskuner | ŞRAK ENTERTAINMENT
-  </footer>
+</footer>
 
 </body>
 </html>
